@@ -1,0 +1,138 @@
+@media (min-width: 600px) {
+    .container, .container-lg, .container-md, .container-sm {
+        max-width: 2400px !important;
+    }
+}
+
+body {
+    background-color: #D9F6FA;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.body-index {
+    background-color: #0077be;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.weather-background {
+    background: url("images/clouds.png") repeat-x top left;
+    animation: move-clouds 30s linear infinite;
+}
+
+@keyframes move-clouds {
+    from { background-position: 0 0; }
+    to { background-position: -5000px 0; }
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 400px;
+    width: fit-content;
+    margin: 75px auto;
+    padding: 1em;
+    background-color: #fff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0 30px 60px -12px, rgba(0, 0, 0, 0.3) 0 18px 36px -18px;
+    border-radius: 10px;
+
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    width: fit-content;
+    margin: 150px auto;
+    padding: 20px;
+    background-color: #FBF9F4;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 19px 38px, rgba(0, 0, 0, 0.22) 0 15px 12px;
+    border-radius: 10px;
+    /*opacity: 0.8;*/
+}
+
+h1 {
+  margin-bottom: 0.5em;
+}
+
+.weather-results {
+  margin-bottom: 0.5em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+label, input {
+  margin: 0.5em 0;
+}
+
+form input {
+  margin-bottom: 10px;
+}
+
+button {
+  margin-top: 10px;
+}
+
+.data-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.data-table-header-row {
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+  font-weight: bold;
+  text-align: center;
+  padding: 0.5em;
+}
+
+.data-table td {
+  border: 1px solid #ddd;
+  padding: 0.5em;
+}
+
+td.temp {
+  border: none;
+    padding: 0;
+    font-size: 14px;
+}
+
+th {
+  white-space: nowrap;
+}
+
+tr.center {
+  text-align: center;
+}
